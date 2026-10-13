@@ -6,8 +6,10 @@
 # Easy  ·  Arrays & Hashing
 # https://leetcode.com/problems/valid-anagram/
 #
-# Primești două stringuri, `s` și `t`. Returnează `True` dacă `t` e o anagramă a lui `s` — se
-# obține rearanjând literele lui `s`, fiecare folosită exact de câte ori apare — și `False`
+# Primești două stringuri, `s` și `t`.
+# Returnează `True` dacă `t` e o anagramă a lui `s`
+# — se obține rearanjând literele lui `s`,
+# fiecare folosită exact de câte ori apare — și `False`
 # altfel.
 #
 # Exemplul 1
@@ -26,8 +28,11 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
 # @lc code=start
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        
+    def isAnagram(self, s: str, t: str) -> bool:  # pyright: ignore[reportReturnType]
+        return sorted(s) == sorted(t)
+
+
 # @lc code=end

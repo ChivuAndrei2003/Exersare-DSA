@@ -32,6 +32,6 @@ from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, Tr
 
 # @lc code=start
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelf(self, nums: List[int]) -> List[int]: # type: ignore
         
 # @lc code=end

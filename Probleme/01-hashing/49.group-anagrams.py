@@ -34,8 +34,15 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
 # @lc code=start
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:  # type: ignore
+        groups = defaultdict(list)
+        for s in strs:
+            key = tuple(sorted(s))
+            groups[key].append(s)
+        return list(groups.values())
+
+
 # @lc code=end

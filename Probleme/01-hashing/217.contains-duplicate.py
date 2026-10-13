@@ -29,8 +29,14 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
 # @lc code=start
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        
+        seen = set()
+        for x in nums:
+            seen.add(x)
+        return len(seen) != len(nums)
+
+
 # @lc code=end

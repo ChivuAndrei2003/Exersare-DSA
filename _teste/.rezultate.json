@@ -1,0 +1,26 @@
+{
+"contains-duplicate": {
+"h": "ece94f604feca5db",
+"ok": true,
+"p": 8,
+"t": 8
+},
+"group-anagrams": {
+"h": "93f55ec3277b383a",
+"ok": true,
+"p": 7,
+"t": 7
+},
+"two-sum": {
+"h": "369111c88ad99c4d",
+"ok": true,
+"p": 8,
+"t": 8
+},
+"valid-anagram": {
+"h": "80f4db7c103c1d28",
+"ok": true,
+"p": 9,
+"t": 9
+}
+}
