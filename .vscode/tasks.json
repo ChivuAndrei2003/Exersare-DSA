@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Testează problema curentă",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder}/test.py", "${file}"],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "clear": true, "focus": false, "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rulează doar exemplele",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder}/test.py", "${file}", "-e"],
+      "presentation": { "clear": true, "focus": false, "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Testează tot ce am început",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder}/test.py"],
+      "presentation": { "clear": true, "focus": false, "panel": "shared" },
+      "problemMatcher": []
+    }
+  ]
+}
