@@ -35,4 +35,5 @@ class Solution:
         return sorted(s) == sorted(t)
 
 
+print(divmod(17, 3))
 # @lc code=end

@@ -53,8 +53,31 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
 # @lc code=start
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
-        
+    def isValidSudoku(
+        self, board: List[List[str]]
+    ) -> bool:  # pyright: ignore[reportReturnType]
+        rows = [set() for _ in range(9)]
+        cols = [set() for _ in range(9)]
+        boxes = [set() for _ in range(9)]
+
+        for r in range(9):
+            for c in range(9):
+                val = board[r][c]
+                if val == ".":  # blank cell is skipped
+                    continue
+
+                b = (r // 3) * 3 + c // 3  # index of the 3x3 square
+
+                if val in rows[r] or val in cols[c] or val in boxes[b]:
+                    return False
+
+                rows[r].add(val)
+                cols[c].add(val)
+                boxes[b].add(val)
+        return True
+
+
 # @lc code=end

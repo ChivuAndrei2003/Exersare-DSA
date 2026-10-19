@@ -8,3 +8,4 @@ def group_anagrams(strs):
         key = tuple(sorted(s))  # semnătura grupului
         groups[key].append(s)
     return list(groups.values())
+

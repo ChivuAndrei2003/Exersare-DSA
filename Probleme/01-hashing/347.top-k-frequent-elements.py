@@ -35,8 +35,26 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
 # @lc code=start
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:  # type: ignore
+
+        count = Counter(nums)
+        buckets = [[] for _ in range(len(nums) + 1)]  # len +1 bcs index=freq
+
+        # append the frequencies to buckets
+        for num, c in count.items():
+            buckets[c].append(num)
+            
+        res = []
+        for c in range(len(buckets) - 1, 0, -1):
+            for num in buckets[c]:
+                res.append(num)
+                if len(res) == k:
+                    return res
+        return res
+
+
 # @lc code=end
+# 1 2 3 4

@@ -11,6 +11,18 @@
 "p": 7,
 "t": 7
 },
+"product-of-array-except-self": {
+"h": "47c51101e2af7c5c",
+"ok": true,
+"p": 7,
+"t": 7
+},
+"top-k-frequent-elements": {
+"h": "68a923c6c7612f22",
+"ok": true,
+"p": 7,
+"t": 7
+},
 "two-sum": {
 "h": "369111c88ad99c4d",
 "ok": true,
@@ -18,7 +30,7 @@
 "t": 8
 },
 "valid-anagram": {
-"h": "80f4db7c103c1d28",
+"h": "ba1dfa83ddb0585c",
 "ok": true,
 "p": 9,
 "t": 9
