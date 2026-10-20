@@ -11,6 +11,12 @@
 "p": 7,
 "t": 7
 },
+"longest-consecutive-sequence": {
+"h": "8e06d4622bf9665e",
+"ok": true,
+"p": 8,
+"t": 8
+},
 "product-of-array-except-self": {
 "h": "47c51101e2af7c5c",
 "ok": true,

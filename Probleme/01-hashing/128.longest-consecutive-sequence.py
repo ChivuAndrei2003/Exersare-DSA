@@ -32,8 +32,20 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
+# nums = [101,100,99,0]
 # @lc code=start
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
-        
+    def longestConsecutive(self, nums: List[int]) -> int:  # type: ignore
+        s = set(nums)
+        best = 0
+
+        for x in s:
+            y = x
+            while y + 1 in s:
+                y += 1
+            best = max(best, y - x + 1)
+        return best
+
+
 # @lc code=end
