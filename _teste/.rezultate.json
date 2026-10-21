@@ -46,5 +46,11 @@
 "ok": true,
 "p": 9,
 "t": 9
+},
+"valid-palindrome": {
+"h": "32ad53b22ac2a1c1",
+"ok": true,
+"p": 8,
+"t": 8
 }
 }
