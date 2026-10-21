@@ -2,10 +2,13 @@
   ****** PE SCURT ******
 
 * Pointeri opuși (l la început, r la final):
-   pe array sortat sau când e clar ce capăt muți. Fiecare pas elimină un element → O(n) în loc de O(n²).
+   pe array sortat sau când e clar ce capăt muți. 
+  Fiecare pas elimină un element → O(n) în loc de O(n²).
+  
 * Aceeași direcție (read / write): unul citește, celălalt arată unde scrii următorul element valid.
    Pentru modificări in-place (duplicate, zerouri).
-* K-Sum (3Sum, 4Sum): sortezi, fixezi un element cu o buclă și rezolvi restul cu two pointers.
+* K-Sum (3Sum, 4Sum): sortezi, 
+     fixezi un element cu o buclă și rezolvi restul cu two pointers.
 """
 
 
