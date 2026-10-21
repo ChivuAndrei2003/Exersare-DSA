@@ -1,4 +1,10 @@
 {
+"3sum": {
+"h": "698161559a38b21c",
+"ok": true,
+"p": 8,
+"t": 8
+},
 "contains-duplicate": {
 "h": "ece94f604feca5db",
 "ok": true,
