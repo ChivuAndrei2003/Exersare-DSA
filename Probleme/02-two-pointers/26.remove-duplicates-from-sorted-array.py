@@ -31,8 +31,18 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+NUMS = [0,0,1,1,1,2,2]
+print(len(NUMS))
 # @lc code=start
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
-        
+    def removeDuplicates(self, nums: List[int]) -> int:  # type: ignore
+        w = 1
+
+        for r in range(1, len(nums)):
+            if nums[r] != nums[w - 1]:
+                nums[w] = nums[r]
+                w += 1
+        return w
+
+
 # @lc code=end

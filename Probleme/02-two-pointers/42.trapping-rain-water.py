@@ -11,7 +11,7 @@
 #
 # Calculează câte unități de apă rămân prinse între bare după ploaie.
 #
-# Exemplul 1
+# Exemplul 1 1 2 1 1
 #   Input:  height = [0,1,0,2,1,0,1,3,2,1,2,1]
 #   Output: 6
 #
@@ -26,10 +26,28 @@
 #
 # Teste:  python3 test.py 42      (în VS Code: Cmd+Shift+B)
 #
+
+
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
+
 
 # @lc code=start
 class Solution:
-    def trap(self, height: List[int]) -> int:
-        
+    def trap(self, height: List[int]) -> int:  # type: ignore
+        l, r = 0, len(height) - 1
+        left_max = right_max = 0
+        total = 0
+
+        while l < r:
+            if height[l] < height[r]:
+                left_max = max(left_max, height[l])
+                total += left_max - height[l]
+                l += 1
+            else:
+                right_max = max(right_max, height[r])
+                total += right_max - height[r]
+                r -= 1
+        return total
+
+
 # @lc code=end

@@ -5,6 +5,12 @@
 "p": 8,
 "t": 8
 },
+"container-with-most-water": {
+"h": "d98af365fb9a8220",
+"ok": true,
+"p": 7,
+"t": 7
+},
 "contains-duplicate": {
 "h": "ece94f604feca5db",
 "ok": true,
@@ -29,11 +35,23 @@
 "p": 7,
 "t": 7
 },
+"remove-duplicates-from-sorted-array": {
+"h": "82baffdcb55fb902",
+"ok": true,
+"p": 7,
+"t": 7
+},
 "top-k-frequent-elements": {
 "h": "68a923c6c7612f22",
 "ok": true,
 "p": 7,
 "t": 7
+},
+"trapping-rain-water": {
+"h": "bb0e1b42bb739074",
+"ok": true,
+"p": 8,
+"t": 8
 },
 "two-sum": {
 "h": "369111c88ad99c4d",
