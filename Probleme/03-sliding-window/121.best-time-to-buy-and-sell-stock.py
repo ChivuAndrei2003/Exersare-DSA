@@ -27,8 +27,23 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+# l = r = 0
+# best = [r - l + 1]
+
+# prices2 = [7, 1, 5, 3, 6, 4]
+# prices = [7, 6, 4, 3, 1]
+
+
 # @lc code=start
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        
+    def maxProfit(self, prices: List[int]) -> int:  # type: ignore
+        min_so_far = prices[0]
+        res = 0
+
+        for i in range(1, len(prices)):
+            min_so_far = min(min_so_far, prices[i])
+            res = max(res, prices[i] - min_so_far)
+        return res
+
+
 # @lc code=end

@@ -33,8 +33,20 @@
 #
 from dsa import *  # ce are LeetCode deja importat: List, Optional, ListNode, TreeNode, Counter, deque, heappush...
 
+
 # @lc code=start
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        
+        l = total = 0
+        best = float("inf")
+
+        for r, x in enumerate(nums):
+            total += x
+            while total >= target:
+                best = min(best, r - l + 1)
+                total -= nums[l]
+                l += 1
+        return 0 if best == float("inf") else best  # type: ignore
+
+
 # @lc code=end

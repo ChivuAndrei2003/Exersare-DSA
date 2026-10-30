@@ -5,6 +5,12 @@
 "p": 8,
 "t": 8
 },
+"best-time-to-buy-and-sell-stock": {
+"h": "31ef273ff02938d8",
+"ok": true,
+"p": 7,
+"t": 7
+},
 "container-with-most-water": {
 "h": "d98af365fb9a8220",
 "ok": true,
@@ -28,6 +34,36 @@
 "ok": true,
 "p": 8,
 "t": 8
+},
+"longest-repeating-character-replacement": {
+"h": "828d3f06d28797b9",
+"ok": true,
+"p": 7,
+"t": 7
+},
+"longest-substring-without-repeating-characters": {
+"h": "5eb7bfec94e37e76",
+"ok": true,
+"p": 9,
+"t": 9
+},
+"minimum-size-subarray-sum": {
+"h": "ed6f93b0bdac1732",
+"ok": true,
+"p": 7,
+"t": 7
+},
+"minimum-window-substring": {
+"h": "08d970b6e2831946",
+"ok": true,
+"p": 7,
+"t": 7
+},
+"permutation-in-string": {
+"h": "4822ec90479206c6",
+"ok": true,
+"p": 7,
+"t": 7
 },
 "product-of-array-except-self": {
 "h": "47c51101e2af7c5c",
